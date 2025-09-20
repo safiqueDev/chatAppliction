@@ -13,7 +13,7 @@ const useGetOtherUsers = () => {
         const fetchOtherUsers = async()=>{
             try{
 
-                const res = await axios.get(`http://localhost:8080/api/v1/user`);
+                const res = await axios.get(` https://chatappliction.onrender.com/api/v1/user`);
              
                 
 dispatch(setOtherUsers(res.data))
